@@ -1,5 +1,5 @@
 package property;
 
-public class Weapon {
-
+public class Weapon extends Item{
+	float damage;
 }
