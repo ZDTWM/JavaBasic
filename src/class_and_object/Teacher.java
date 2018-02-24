@@ -22,6 +22,12 @@ public class Teacher {
 		Teacher.copyright = "都是四中的老师";
 		System.out.println(teacher1.name);
 		System.out.println(teacher1.copyright);
+		/**
+		 * 2、练习，通过teacher1来修改copyright
+		 * 		teacher2的copyright也会改变
+		 * 	因为类属性只有一个，不同的对象都共享这么一个类属性
+		 */
+		teacher1.copyright = "二中老师";
 		
 		Teacher teacher2 = new Teacher();
 		teacher2.name = "老师2";
