@@ -24,9 +24,18 @@ public class Pig {
 		System.out.println("两个参数的构造方法");
 		this.weight = weight;
 	}
-	
+	//带四个参数的构造方法
+	public Pig(String name,String color,int price,float weight){
+		this(name,weight);
+		System.out.println("四个参数的构造方法");
+		this.color = color;
+		this.price = price;
+	}
 	public static void main(String[] args) {
 		Pig aPig = new Pig("佩奇",383);
 		System.out.println(aPig.name);
+		
+		Pig bPig = new Pig("佩奇","黑色",1000,200);
+		System.out.println(bPig.name +","+ bPig.color +","+ bPig.price +","+ bPig.weight);
 	}
 }
