@@ -29,5 +29,13 @@ public class ADHero {
 		
 		System.out.println(adhero1.equals(adhero2));//false
 		System.out.println(adhero1.equals(adhero3));//true
+		
+		/**
+		 * 5、==
+		 */
+		//这不是Object的方法，但是用于判断两个对象是否相同
+		//更准确的讲，用于判断两个引用，是否指向了同一个对象
+		System.out.println(adhero1 == adhero2);//false
+		System.out.println(adhero1 == adhero3);//false
 	}
 }
